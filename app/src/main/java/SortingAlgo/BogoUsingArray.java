@@ -14,13 +14,16 @@ public class BogoUsingArray {
 
         System.out.println("Before sort:"+Arrays.toString(arrayOfNum));
 
+        int numOfTries = 0;
         while(isSorted(arrayOfNum) == false)
         {
+            numOfTries++;
             System.out.println(Arrays.toString(arrayOfNum));
             shuffle(arrayOfNum);
         }
 
         System.out.println("After Sort:"+Arrays.toString(arrayOfNum));
+        System.out.println("Number of tries: "+numOfTries);
 
 }
 
