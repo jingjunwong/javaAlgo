@@ -7,6 +7,8 @@ import java.util.Random;
 import java.util.Arrays;
 
 public class BogoUsingArray {
+
+    //the main code
     public static void main(String[] args) {
         int arrayOfNum[] = {5,1,3,2,6,4};
 
@@ -22,7 +24,8 @@ public class BogoUsingArray {
 
 }
 
-
+//checks if the passed array is sorted properly
+//NOTE: i cannot be zero because the index will be [-1]
 public static boolean isSorted(int[] anArray)
     {
         for(int i=1; i < anArray.length; i++)
@@ -35,6 +38,8 @@ public static boolean isSorted(int[] anArray)
         return true;
     }
 
+
+//randomly shuffles the passed array by swapping values in random indexes
 public static void shuffle(int[] anArray)
 {
     Random random = new Random();
@@ -47,6 +52,7 @@ public static void shuffle(int[] anArray)
     
 }
 
+//swaps the values in two different indexes
 public static void swap(int[] anArray, int i, int j)
 {
     int temp = anArray[i];
