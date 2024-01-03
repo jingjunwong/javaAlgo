@@ -41,9 +41,11 @@ public class ReverseWords {
 
         for(int i = 0; i<words.length; i++)
         {
+            //This checking is to make sure the pointer moves to the rightmost character of the word
             if(words[i] != ' ' && (i == rightPointer - 1 || words[i+1] == ' '))
             {
                 reverseAllCharacters(leftPointer, i, words);
+                //Move the pointer to the starting character of the next word
                 leftPointer = i + 2;
             }
         }
